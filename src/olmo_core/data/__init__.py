@@ -24,6 +24,7 @@ from .data_loader import (
     NumpyVSLDataLoader,
     TextDataLoaderBase,
 )
+from .megatron_dataset import MegatronFSLDataset, MegatronFSLDatasetConfig, MegatronIdx
 from .mixes import DataMix, DataMixBase
 from .numpy_dataset import (
     InstanceFilterConfig,
@@ -69,6 +70,9 @@ __all__ = [
     "NumpyPackedFSLDatasetConfig",
     "NumpyInterleavedFSLDatasetConfig",
     "NumpyVSLDatasetConfig",
+    "MegatronFSLDataset",
+    "MegatronFSLDatasetConfig",
+    "MegatronIdx",
     "InstanceFilterConfig",
     "VSLCurriculumType",
     "VSLCurriculumConfig",
